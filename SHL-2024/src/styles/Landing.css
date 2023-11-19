@@ -1,0 +1,94 @@
+/* Landing.css */
+
+.container {
+    position: relative;
+  }
+  
+  .navbar {
+    font-family: 'Inter', sans-serif;
+    color: #FFF;
+    font-size: 5vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 1.6vw;
+    display: inline-block;
+  }
+  
+  .navbar-secondary {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 4vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .home {
+    margin-left: 30vw;
+  }
+  
+  .navbar-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .info {
+    margin-left: 2vw;
+  }
+  
+  .image-container {
+    position: relative;
+    text-align: center;
+  }
+  
+  .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+  
+  .SHL {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    color: #121212;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 20vh;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    white-space: nowrap;
+    text-shadow: -3px -3px 0 white, 3px -3px 0 white, -3px 3px 0 white, 3px 3px 0 white, 0px 0px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  .dotted {
+    color: white;
+  }
+  
+  
+  
+  @media only screen and (max-width: 768px) {
+    .navbar {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+      font-size: 10vw;
+      text-align: center;
+    }
+  
+    .navbar-container {
+      flex-wrap: nowrap;
+    }
+  
+    .home,
+    .info {
+      display: none;
+    }
+  }
+  
