@@ -1,0 +1,81 @@
+.StepsContainer {
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.bodyIMG {
+    width: 100%;
+    height: 100%;
+}
+
+.textOverlay {
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFF;
+    width: 80%;
+}
+
+.main {
+    font-family: 'Inter', sans-serif;
+    font-size: 10vh;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.secondary {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5vh;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.textOverlay2 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFF;
+    width: 80%;
+}
+
+.textOverlay3 {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFF;
+    width: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        font-size: 10vw;
+    }
+
+    .secondary {
+        font-size: 3.5vw;
+    }
+
+    .textOverlay {
+        top: 20%;
+        left: 65%;
+    }
+
+    .textOverlay2 {
+        top: 55%;
+        left: 40%;
+    }
+
+    .textOverlay3 {
+        top: 90%;
+        left: 60%;
+    }
+  }

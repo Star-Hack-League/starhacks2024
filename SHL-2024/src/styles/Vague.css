@@ -43,3 +43,9 @@
     font-weight: 900;
     line-height: normal;
   }
+
+  @media only screen and (max-width: 768px) {
+    .SHL {
+      font-size: 10vw;
+    }
+  }

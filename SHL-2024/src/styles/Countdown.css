@@ -1,0 +1,67 @@
+.countdown-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.content {
+    text-align: center;
+}
+
+.date {
+    background: linear-gradient(180deg, #B84CFF 0%, #73C0FE 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Inter', sans-serif;
+    font-size: 3.2vh;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin: 0;
+}
+
+.countdown {
+    font-family: 'Inter', sans-serif;
+    font-size: 20vh;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    background: linear-gradient(180deg, #B84CFF 0%, #73C0FE 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.soon {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 3.2vh;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin: 0;
+}
+
+.copyright {
+    color: #808080;
+    font-family: 'Inter', sans-serif;
+    font-size: 3.2vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 2vh;
+}
+
+@media only screen and (max-width: 768px) {
+    .countdown {
+        font-size: 5vh;
+    }
+}

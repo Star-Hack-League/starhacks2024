@@ -10,13 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scroll-snap": "^1.0.0",
+    "react-scroll-to-top": "^3.0.0",
     "react-use-scroll-snap": "^1.0.0",
     "scrollreveal": "^4.0.9"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@types/scrollreveal": "^0.0.11",

@@ -2,6 +2,7 @@ import "../styles/Vague.css";
 import { useEffect, useRef } from "react";
 import useScrollSnap from "react-use-scroll-snap";
 import ScrollReveal from "scrollreveal";
+import Steps from "./Steps";
 
 function Vague() {
   const scrollRef = useRef(null);
@@ -17,27 +18,30 @@ function Vague() {
       delay: 200,
       opacity: 0,
       easing: "ease-in-out",
-      reset: true,
+      reset: false,
     });
   }, []);
 
   return (
-    <div className="vague-container" ref={scrollRef}>
-      <div className="color-container">
-        <div className="text-overlay">
-          <div className="container">
-            <div className="text-container">
-              <h1 className="SHL">Star Hack League</h1>
-              <p className="text">
-                is dedicated to advancing <br />
-                education and fostering <br />
-                competitive growth among <br />
-                students
-              </p>
+    <div ref={scrollRef}>
+      <div className="vague-container" ref={scrollRef}>
+        <div className="color-container">
+          <div className="text-overlay">
+            <div className="container">
+              <div className="text-container">
+                <h1 className="SHL">Star Hack League</h1>
+                <p className="text">
+                  is dedicated to advancing <br />
+                  education and fostering <br />
+                  competitive growth among <br />
+                  students
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <Steps />
     </div>
   );
 }
