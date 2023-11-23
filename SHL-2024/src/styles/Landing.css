@@ -59,6 +59,10 @@
   height: 100vh;
 }
 
+.link {
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 768px) {
   .navbar {
     white-space: nowrap;
