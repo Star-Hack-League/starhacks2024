@@ -29,7 +29,7 @@ function Vague() {
           <div className="text-overlay">
             <div className="container">
               <div className="text-container">
-                <h1 className="SHL">Star Hack League</h1>
+                <h1 className="SHL">Star Hack Alliance</h1>
                 <p className="text">
 					is a strictly not-for-profit organization <br/>passionately committed to advancing education<br/> and fostering the competitive growth of students.<br /><br />
 
