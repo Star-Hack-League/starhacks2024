@@ -31,10 +31,11 @@ function Vague() {
               <div className="text-container">
                 <h1 className="SHL">Star Hack League</h1>
                 <p className="text">
-                  is dedicated to advancing <br />
-                  education and fostering <br />
-                  competitive growth among <br />
-                  students
+					is a strictly not-for-profit organization <br/>passionately committed to advancing education<br/> and fostering the competitive growth of students.<br /><br />
+
+					Our efforts are concentrated on <br/>nurturing exceptional software development<br/> skills and orchestrating engaging events, <br/>all aimed at paving the way for a brighter future.<br /><br />
+
+					At Star Hack Alliance, we firmly believe that<br/> students hold the key to shaping tomorrow's world. <br/>Equipping them with the necessary tools and <br/>opportunities is fundamental to their success.
                 </p>
               </div>
             </div>
