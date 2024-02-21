@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "../styles/Countdown.css";
 import ScrollToTop from "react-scroll-to-top";
+import useScrollSnap from "react-use-scroll-snap";
 
 interface TimeLeft {
   days: number;
@@ -10,6 +11,9 @@ interface TimeLeft {
 }
 
 function Countdown() {
+  const scrollRef = useRef(null);
+  useScrollSnap({ ref: scrollRef, duration: 20 });
+
   const calculateTimeLeft = (): TimeLeft => {
     const currentDate = new Date();
     const targetDate = new Date("March 2, 2024 00:00:00");
@@ -55,22 +59,24 @@ function Countdown() {
   const { days, hours, minutes, seconds } = timeLeft;
 
   return (
-    <div className="countdown-container">
-      <div className="content">
-        <p className="date">March 2nd, 2024</p>
-        {days >= 0 ? (
-          <h1 className="countdown">
-            {days}:{formatTime(hours)}:{formatTime(minutes)}:
-            {formatTime(seconds)}
-          </h1>
-        ) : (
-          <h1 className="countdown">Countdown ended!</h1>
-        )}
-        <p className="soon">More Details Soon</p>
-        <ScrollToTop smooth />
-      </div>
-      <div className="copyright">
-        Star Hack Alliance ©2023, all rights reserved.
+    <div ref={scrollRef}>
+      <div className="countdown-container">
+        <div className="content">
+          <p className="date">March 2nd, 2024</p>
+          {days >= 0 ? (
+            <h1 className="countdown">
+              {days}:{formatTime(hours)}:{formatTime(minutes)}:
+              {formatTime(seconds)}
+            </h1>
+          ) : (
+            <h1 className="countdown">Countdown ended!</h1>
+          )}
+          <p className="soon">More Details Soon</p>
+          <ScrollToTop smooth />
+        </div>
+        <div className="copyright">
+          Star Hack Alliance ©2023, all rights reserved.
+        </div>
       </div>
     </div>
   );

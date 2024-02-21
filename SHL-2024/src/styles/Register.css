@@ -1,0 +1,55 @@
+.register-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: relative;
+}
+
+.registerButton,
+.discordButton {
+    width: 15.625vw;
+    height: 10.471204188481675vh;
+    border-radius: 2.6041666666666665vw;
+    background-color: #090909;
+    border: 2px solid white;
+    color: white;
+    font-size: 5.2356020942408374vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+.registerButton:hover,
+.discordButton:hover {
+    background-color: white;
+    border-color: #090909;
+    color: #090909;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 2.094240837696335vh;
+    align-self: center;
+    position: relative;
+    z-index: 2;
+}
+
+.register-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+@media only screen and (max-width: 768px) {
+    .register-image {
+        width: 100%;
+    }
+}
