@@ -16,7 +16,7 @@ function Countdown() {
 
   const calculateTimeLeft = (): TimeLeft => {
     const currentDate = new Date();
-    const targetDate = new Date("March 2, 2024 00:00:00");
+    const targetDate = new Date("March 2, 2024 12:00:00");
     const difference = targetDate.getTime() - currentDate.getTime();
 
     let timeLeft: TimeLeft = {
