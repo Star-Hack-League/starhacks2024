@@ -32,7 +32,7 @@ function Steps() {
           3. Submit
         </h1>
         <p className="secondary" data-aos="fade-down" data-aos-offset="-120">
-          Submissions End: March 3rd 2024
+          Submissions End: March 9th 2024
         </p>
       </div>
     </div>
